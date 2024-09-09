@@ -38,15 +38,13 @@ export async function handleBookmarkBlock(block) {
 
     // 构建HTML并返回
     return `
-      <div class="border rounded-lg shadow-lg p-4 my-4 bg-gray-800 text-white">
+<div class="bookmark-container">
   <a href="${url}" target="_blank" class="block">
-    <div class="flex items-center justify-between">
-      <div class="flex-grow pr-4">
-        <h3 class="text-2xl font-bold mb-2">${title}</h3>
-        <p class="text-gray-300 mb-2">${description}</p>
-        <p class="text-blue-400 hover:underline">${url}</p>
-      </div>
-      ${image ? `<img src="${image}" alt="${title}" class="max-w-xs h-auto object-contain">` : ''}
+      ${image ? `<img src="${image}" alt="${title}" class="bookmark-image">` : ''}
+    <div class="bookmark-info">
+      <h3 class="bookmark-title">${title}</h3>
+      <p class="bookmark-description">${description}</p>
+      <p class="bookmark-url">${url}</p>
     </div>
   </a>
 </div>

@@ -1,0 +1,63 @@
+.bookmark-container {
+    border: 1px solid #2d3748;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    background-color: #1a202c;
+    color: #e2e8f0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.bookmark-container a {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none; 
+}
+
+.bookmark-info {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.bookmark-info * {
+    line-height: 100%;
+    margin: 0 !important;
+}
+.bookmark-image {
+    max-width: 230px;
+    height: 100%;
+    object-fit: cover;        /* 图片等比例裁剪 */
+    object-position: center;  /* 图片居中裁剪 */
+}
+.bookmark-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.bookmark-description {
+    color: #a0aec0;
+    margin-bottom: 0.5rem;
+}
+
+.bookmark-url {
+    color: #63b3ed;
+    text-decoration: none;
+}
+
+/* 媒体查询：当宽度小于600px时 */
+@media (max-width: 600px) {
+
+    .bookmark-image {
+        display: none;       /* 保持图片比例 */
+    }
+}

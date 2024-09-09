@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@/styles/blocks/bookmark.css';
 
 :root {
   --background: #ffffff;
