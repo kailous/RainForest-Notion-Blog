@@ -1,6 +1,5 @@
 .bookmark-container {
-    border: 1px solid #2d3748;
-    border-radius: 0.5rem;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 1.5rem;
     background-color: #1a202c;
